@@ -3,14 +3,13 @@
 // @namespace    ZUZU Browser
 // @description  Make your browser BLAZING FAST !!!
 // @copyright    ©2020 - Yoga Budiman
-// @version      1.0
+// @version      1.1
 // @author       Last Roze
 // @homepageURL  https://github.com/LastRoze/
 // @supportURL   https://linkedin.com/in/lastroze
 // @updateURL    https://github.com/LastRoze/ZUZU-Browser/raw/master/ZUZU-Browser.meta.js
 // @downloadURL  https://github.com/LastRoze/ZUZU-Browser/raw/master/ZUZU-Browser.user.js
 // @icon         https://github.com/LastRoze/ZUZU-Browser/blob/master/ZUZU%20Hospitality.jpg?raw=true
-// @require      https://code.jquery.com/jquery-latest.js
 // @run-at       document-start
 // @include      *
 // @include      http://*

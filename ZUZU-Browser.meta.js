@@ -3,7 +3,7 @@
 // @namespace    ZUZU Browser
 // @description  Make your browser BLAZING FAST !!!
 // @copyright    ©2020 - Yoga Budiman
-// @version      1.1
+// @version      1.2
 // @author       Last Roze
 // @homepageURL  https://github.com/LastRoze/
 // @supportURL   https://linkedin.com/in/lastroze

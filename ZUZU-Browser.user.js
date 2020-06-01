@@ -33,7 +33,7 @@
 // @noframes
 // ==/UserScript==
 
-(async function() {
+(function() {
     'use strict';
     window.seconds = -1;
 }, !1);
@@ -44,7 +44,7 @@ let nolz_inspics = ["111.222.com","333.444.com"];
 let nolz_wlist = ["search.taobao.com","list.tmall.com","s.taobao.com"];
 let nolz_prehref = document.location.href;
 
-let nolz_nolazyload = async function()
+let nolz_nolazyload = function()
 {
     try
     {
@@ -85,7 +85,7 @@ let nolz_nolazyload = async function()
     }
 }
 
-let nolz_preload = async function(url,tag,img)
+let nolz_preload = function(url,tag,img)
 {
     let loaded = false;
     for(let i = 0; i<nolz_lazypics.length;i++)
@@ -110,7 +110,7 @@ let nolz_preload = async function(url,tag,img)
 
 }
 
-let nolz_loading = async function(url,tag,img)
+let nolz_loading = function(url,tag,img)
 {
     if(nolz_di_check())
     {
@@ -124,7 +124,7 @@ let nolz_loading = async function(url,tag,img)
     nolz_lazypics.push(url)
 }
 
-let nolz_di_check = async function()
+let nolz_di_check = function()
 {
     let hn = document.location.hostname;
     for(let i=0;i<nolz_inspics.length;i++)
@@ -137,7 +137,7 @@ let nolz_di_check = async function()
     return false;
 }
 
-let nolz_observer = new MutationObserver(async function(mutations)
+let nolz_observer = new MutationObserver(function(mutations)
 {
     nolz_nolazyload();
 });
@@ -147,8 +147,8 @@ nolz_observer.observe(document.documentElement, {
   subtree: true
 });
 
-( async function(){
-	async function removeLazy (elm, attr) {
+( function(){
+	function removeLazy (elm, attr) {
 		if( elm.getAttribute(attr) && elm.src != elm.getAttribute(attr) )
 		{
 			elm.src = elm.getAttribute(attr);
@@ -156,7 +156,7 @@ nolz_observer.observe(document.documentElement, {
 		}
 	}
 
-	async function replaceLazyload(doc) {
+	function replaceLazyload(doc) {
 		var img = doc.images;
 		var i;
 		if ( img != undefined )
@@ -168,7 +168,7 @@ nolz_observer.observe(document.documentElement, {
 		}
 	}
 
-	async function getEvent(evt){
+	function getEvent(evt){
 		var node = evt.target;
 		replaceLazyload(node);
 	}
@@ -178,7 +178,7 @@ nolz_observer.observe(document.documentElement, {
 	document.body.addEventListener('AutoPagerize_DOMNodeInserted', getEvent, false);
 }, !1);
 
-document.getElementsByTagName("body")[0].addEventListener("wheel",async function (event) {
+document.getElementsByTagName("body")[0].addEventListener("wheel",function (event) {
     'use strict';
     if (event.target.classList.contains('ace_content')) {
         return;
@@ -187,13 +187,13 @@ document.getElementsByTagName("body")[0].addEventListener("wheel",async function
     event.stopPropagation();
 }, !1);
 
-document.addEventListener('keydown', async function(e) { e.stopPropagation(); }, !1);
-document.addEventListener('keyup', async function(e) { e.stopPropagation(); }, !1);
-document.addEventListener('mousedown', async function(e) { e.stopPropagation(); }, !1);
-document.addEventListener('mouseup', async function(e) { e.stopPropagation(); }, !1);
+document.addEventListener('keydown', function(e) { e.stopPropagation(); }, !1);
+document.addEventListener('keyup', function(e) { e.stopPropagation(); }, !1);
+document.addEventListener('mousedown', function(e) { e.stopPropagation(); }, !1);
+document.addEventListener('mouseup', function(e) { e.stopPropagation(); }, !1);
 
 
-(async function() {
+(function() {
     'use strict';
     const node = document.getElementsByTagName('html');
     for (const elm of node) {
@@ -203,7 +203,7 @@ document.addEventListener('mouseup', async function(e) { e.stopPropagation(); },
     }
 }, !1);
 
-(async function() {
+(function() {
 	var default_style = '\
 	* {\
 		border-radius:none !important;\
@@ -227,7 +227,7 @@ document.addEventListener('mouseup', async function(e) { e.stopPropagation(); },
 	GM.addStyle(default_style);
 	}, !1);
 
-document.addEventListener('readystatechange', async function() {
+document.addEventListener('readystatechange', function() {
     var e = document.createElement("script");
     e.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/jquery.turbolinks/2.1.0/jquery.turbolinks.min.js");
     document.getElementsByTagName("head").item(0).insertBefore(e, document.getElementById('hvt-script'));

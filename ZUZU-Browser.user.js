@@ -3,7 +3,7 @@
 // @namespace    ZUZU Browser
 // @description  Make your browser BLAZING FAST !!!
 // @copyright    ©2020 - Yoga Budiman
-// @version      3.0
+// @version      3.1
 // @author       Last Roze
 // @homepageURL  https://github.com/LastRoze/
 // @supportURL   https://linkedin.com/in/lastroze
@@ -223,12 +223,12 @@ document.addEventListener('mouseup', function(e) { e.stopPropagation(); }, !1);
 (function(){
     let style = document.createElement('style');
     style.textContent = `*,*::before,*::after{
-        /*animation-delay: 0ms !important;
-        animation-duration: 0ms !important;*/
+        /*animation-delay: 0.001ms !important;
+        animation-duration: 0.001ms !important;*/
         animation-timing-function: step-start !important;
 
-        /*transition-delay: 0ms !important;
-        transition-duration: 0ms !important;*/
+        /*transition-delay: 0.001ms !important;
+        transition-duration: 0.001ms !important;*/
         transition-timing-function: step-start !important;
 
         scroll-behavior: auto !important;

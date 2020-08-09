@@ -3,7 +3,7 @@
 // @namespace    ZUZU Browser
 // @description  Make your browser BLAZING FAST !!!
 // @copyright    ©2020 - Yoga Budiman
-// @version      3.1
+// @version      3.2
 // @author       Last Roze
 // @homepageURL  https://github.com/LastRoze/
 // @supportURL   https://linkedin.com/in/lastroze
@@ -220,16 +220,96 @@ document.addEventListener('mouseup', function(e) { e.stopPropagation(); }, !1);
     }
 }, !1);
 
+(function() {
+    'use strict';
+    const node = document.getElementsByTagName('html');
+    for (const elm of node) {
+        const attr = elm.getAttribute('style') || '';
+        elm.setAttribute('style', attr + 'animation: .0ms !important;');
+        elm.classList.remove('async-hide');
+    }
+}, !1);
+
+(function() {
+    'use strict';
+    const node = document.getElementsByTagName('html');
+    for (const elm of node) {
+        const attr = elm.getAttribute('style') || '';
+        elm.setAttribute('style', attr + 'animation-delay: .0ms !important;');
+        elm.classList.remove('async-hide');
+    }
+}, !1);
+
+(function() {
+    'use strict';
+    const node = document.getElementsByTagName('html');
+    for (const elm of node) {
+        const attr = elm.getAttribute('style') || '';
+        elm.setAttribute('style', attr + 'animation-duration: .0ms !important;');
+        elm.classList.remove('async-hide');
+    }
+}, !1);
+
+(function() {
+    'use strict';
+    const node = document.getElementsByTagName('html');
+    for (const elm of node) {
+        const attr = elm.getAttribute('style') || '';
+        elm.setAttribute('style', attr + 'animation-timing-function: step-end !important;');
+        elm.classList.remove('async-hide');
+    }
+}, !1);
+
+(function() {
+    'use strict';
+    const node = document.getElementsByTagName('html');
+    for (const elm of node) {
+        const attr = elm.getAttribute('style') || '';
+        elm.setAttribute('style', attr + 'transition: .0ms !important;');
+        elm.classList.remove('async-hide');
+    }
+}, !1);
+
+(function() {
+    'use strict';
+    const node = document.getElementsByTagName('html');
+    for (const elm of node) {
+        const attr = elm.getAttribute('style') || '';
+        elm.setAttribute('style', attr + 'transition-delay: .0ms !important;');
+        elm.classList.remove('async-hide');
+    }
+}, !1);
+
+(function() {
+    'use strict';
+    const node = document.getElementsByTagName('html');
+    for (const elm of node) {
+        const attr = elm.getAttribute('style') || '';
+        elm.setAttribute('style', attr + 'transition-duration: .0ms !important;');
+        elm.classList.remove('async-hide');
+    }
+}, !1);
+
+(function() {
+    'use strict';
+    const node = document.getElementsByTagName('html');
+    for (const elm of node) {
+        const attr = elm.getAttribute('style') || '';
+        elm.setAttribute('style', attr + 'transition-timing-function: step-end !important;;');
+        elm.classList.remove('async-hide');
+    }
+}, !1);
+
 (function(){
     let style = document.createElement('style');
     style.textContent = `*,*::before,*::after{
-        /*animation-delay: 0.001ms !important;
-        animation-duration: 0.001ms !important;*/
-        animation-timing-function: step-start !important;
+        /*animation-delay: .0ms !important;
+        animation-duration: .0ms !important;*/
+        animation-timing-function: step-end !important;
 
-        /*transition-delay: 0.001ms !important;
-        transition-duration: 0.001ms !important;*/
-        transition-timing-function: step-start !important;
+        /*transition-delay: .0ms !important;
+        transition-duration: .0ms !important;*/
+        transition-timing-function: step-end !important;
 
         scroll-behavior: auto !important;
     }`;

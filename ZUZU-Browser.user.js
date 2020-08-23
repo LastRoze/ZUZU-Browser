@@ -8,7 +8,7 @@
 // @homepage	https://github.com/LastRoze/
 // @homepageURL	https://github.com/LastRoze/
 // @website		https://lastroze.github.io/
-// @source		https://github.com/LastRoze/DNA-Shield
+// @source		https://github.com/LastRoze/ZUZU-Browser
 // @icon		https://github.com/LastRoze/ZUZU-Browser/blob/master/ZUZU%20Hospitality.jpg?raw=true
 // @iconURL		https://github.com/LastRoze/ZUZU-Browser/blob/master/ZUZU%20Hospitality.jpg?raw=true
 // @defaulticon	https://github.com/LastRoze/ZUZU-Browser/blob/master/ZUZU%20Hospitality.jpg?raw=true

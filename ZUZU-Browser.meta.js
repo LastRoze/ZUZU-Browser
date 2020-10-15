@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        ZUZU Browser
 // @namespace   ZUZU Browser
-// @version	5.2
+// @version	5.3
 // @author	Last Roze
 // @description	Make your browser BLAZING FAST!
 // @copyright	©2020 - Yoga Budiman
